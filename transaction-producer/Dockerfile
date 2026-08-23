@@ -1,5 +1,5 @@
 # Use a lightweight Java 17 runtime
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:17-jre-jammy
 
 # Define the artifact path after running 'mvn clean package'
 ARG JAR_FILE=target/*.jar
