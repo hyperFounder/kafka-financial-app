@@ -8,6 +8,9 @@ An asynchronous, event-driven microservices ecosystem built with **Spring Boot**
 ```mvn clean package -DskipTests```
 2.  **Run the containers in detached mode**
 ```docker-compose up --build -d```
+3. To access the PostgreSQL database inside docker: ```docker exec -it microservice-financial-kafka-postgres-1 bash```
+4. Then, ```\c financialdb``` to  connect to the financialdb database.
+5. Then ```\dt``` to view the tables inside PostgreSQL.
 ```
 [+] up 5/5                                                                                                                                                                  
  ✔ Image microservice-financial-kafka-transaction-producer Built                                                                                                       10.0s
